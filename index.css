@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: cornflowerblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content > h1 {
+    margin-bottom: 40px;
+}
+
+#inputs {
+    margin-bottom: 40px;
+}
+
+#inputs > label {
+    display: block;
+}
+
+#inputs > label > input[type="checkbox"] {
+    display: none;
+}
+#inputs > label > input[type="checkbox"] + span {
+    padding: 5px;
+    cursor: pointer;
+}
+#inputs > label > input[type="checkbox"]:checked + span {
+    background-color: white;
+    color: cornflowerblue;
+}
+
+#create {
+    border: solid 1px white;
+    color: white;
+    background-color: cornflowerblue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#records {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#records > p {
+    margin: 0px;
+}
+.recordTitle {
+    font-weight: bold;
+}
